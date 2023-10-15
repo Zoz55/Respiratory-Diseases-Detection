@@ -1,5 +1,5 @@
 {
-	"name": "final",
+	"name": "chest-deasises",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
@@ -13,5 +13,10 @@
 		"svelte": "^4.0.5",
 		"vite": "^4.4.2"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@tensorflow/tfjs": "^4.11.0",
+		"jimp": "^0.22.10",
+		"node-fetch": "^3.3.2"
+	}
 }
