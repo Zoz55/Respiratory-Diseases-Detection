@@ -1,0 +1,2 @@
+for the project to work you need to run the server:
+python server.py

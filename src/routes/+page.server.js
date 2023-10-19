@@ -29,11 +29,11 @@ export const actions = {
     //     console.log("Diagnosis is:", predClass);
     //     return { message: {message: predClass,image: '/'+file.name } } ;
     // },
-     upload: async ({ cookies, request }) => {
+    upload: async ({ cookies, request }) => {
     const {file} = Object.fromEntries(await request.formData());
     const formData = new FormData();
     formData.append("file", file);
-    const response = await fetch("http://127.0.0.1:5173/static", {
+    const response = await fetch("https://ai-flask.azurewebsites.net/static", {
       mode: "no-cors",
       method: "POST",
       body: formData,
